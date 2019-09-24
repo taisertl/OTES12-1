@@ -9,8 +9,8 @@ Fornecer serviços de análise de dados como ordenação e limpeza de dados, agr
 **Receber JSON:**
 Receber arquivo JSON e função desejada, converter o arquivo em objeto através de função
 
-**Saída**
-**Ordenação de dados: **
+**Saída
+Ordenação de dados: **
 Receber objeto e parâmetro de ordenação; Ordenar por categoria informada pelo usuário; Retornar arquivo JSON ordenado
 
 **Limpeza de dados: **
