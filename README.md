@@ -34,45 +34,45 @@ Receber objeto e campo para previsão; A partir do campo informado, realizar pre
 
  
 ## POST add/numberlist
-numberList: [...]  => ex.: [3, 1, 2, ...]
+numberList: [...]  => ex.: [3, 1, 2, ...]\
 retorno { id: x, status: {code: x, message: "y"} }
 
 ## GET order/{id}
-ex.: lista de ID = 1: numberList[1]: [3, 1, 2, ...]
+ex.: lista de ID = 1: numberList[1]: [3, 1, 2, ...]\
 retorno { id: x, orderedArray: [1, 2, 3, ...], status: {code: x, message: "y"} }
 
 ## GET clean/{id}
-ex.: lista de ID = 1: numberList[1]: [3, 1, 1, ...]
+ex.: lista de ID = 1: numberList[1]: [3, 1, 1, ...]\
 retorno { id: x, cleanedArray: [3, 1, ...], status: {code: x, message: "y"} }
 
 ## GET filter/{id}
-ex.: lista de ID = 1: numberList[1]: [3, 1, 1, ...]
+ex.: lista de ID = 1: numberList[1]: [3, 1, 1, ...]\
 retorno { id: x, filteredArray: [1, 1, ...], status: {code: x, message: "y"} }
 
 ## GET average/{id}
-ex.: lista de ID = 1: numberList[1]: [1, 3, 2, ...]
+ex.: lista de ID = 1: numberList[1]: [1, 3, 2, ...]\
 retorno { id: x, average: 2, status: {code: x, message: "y"} }
 
 ## GET median/{id}
-ex.: lista de ID = 1: numberList[1]: [1, 3, 2, ...]
+ex.: lista de ID = 1: numberList[1]: [1, 3, 2, ...]\
 retorno { id: x, median: 3, status: {code: x, message: "y"} }
 
 ## GET stdDeviation/{id}
-ex.: lista de ID = 1: numberList[1]: [1, 3, 2, ...]
+ex.: lista de ID = 1: numberList[1]: [1, 3, 2, ...]\
 retorno { id: x, stdDeviation: 1, status: {code: x, message: "y"} }
  
 ## GET futureValue/{id}
-ex.: lista de ID = 1: numberList[1]: [1, 2, 3, ...]
+ex.: lista de ID = 1: numberList[1]: [1, 2, 3, ...]\
 retorno { id: x, futureValue: 4, status: {code: x, message: "y"} }
 
 ## GET info/{id}
-ex.: id: 1
+ex.: id: 1\
 retorno { id: x, numberList: [3, 1, 1, ...], status: {code: x, message: "y"} }
 
 ## UPDATE uptList/
-{id: x, numberList: [...]}  => ex.: {1, [3, 1, 2, ...]}
+{id: x, numberList: [...]}  => ex.: {1, [3, 1, 2, ...]}\
 retorno {status: {code: x, message: "y"}}
 
 ## DELETE delList/{id}
-ex.: id: 1
+ex.: id: 1\
 retorno {status: {code: x, message: "y"}}
