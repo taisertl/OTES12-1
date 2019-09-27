@@ -8,7 +8,13 @@ Fornecer serviços de análise de dados como ordenação e limpeza de dados, agr
 
 ## Entrada
 ### Receber JSON:
-Receber arquivo JSON contendo lista infinita de números e salva o mesmo no banco para utilizar durante as requisições de métodos
+Receber arquivo JSON contendo lista infinita de números e salva o mesmo no banco de dados para utilizar durante as requisições de métodos
+
+### Atualização de lista: 
+Receber ID da lista a ser atualizada, juntamente com um JSON contendo a nova lista para atualização no banco de dados
+
+### Exclusão de lista: 
+Receber ID da lista a ser excluida e remove-la do banco de dados
 
 ## Saída
 ### Ordenação de dados:
@@ -37,7 +43,7 @@ Receber objeto e campo para previsão; A partir do campo informado, realizar pre
 numberList: [...]  => ex.: [3, 1, 2, ...]\
 retorno { id: x, status: {code: x, message: "y"} }
 
-## GET order/{id}
+## GET sort/{id}
 ex.: lista de ID = 1: numberList[1]: [3, 1, 2, ...]\
 retorno { id: x, orderedArray: [1, 2, 3, ...], status: {code: x, message: "y"} }
 
